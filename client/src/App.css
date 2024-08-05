@@ -1,0 +1,260 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.drop-zone.dragover {
+  border-color: #000;
+  color: #000;
+  background-color: #f1f1f1; /* Lisätty taustaväri dragover-tilaan */
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+}
+
+.file-list li {
+  color: #28a745;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px; /* Lisätty border-radius */
+}
+
+.file-list li button {
+  margin-left: 10px;
+}
+
+.saved-text {
+  margin-left: auto;
+}
+
+.container-box h1,
+.container-box h2,
+.container-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  margin-left: 5px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 10%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 30%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 50%;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 10%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+.invalid-feedback {
+  color: #dc3545;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signup-container {
+  margin-top: 50px;
+}
+
+
+/* Navbar overall styling */
+
+nav {
+  margin-bottom: 40px;
+  background: var(--color-pastel-lilac);
+  padding: 12px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar link styling */
+.nav-link {
+  color: var(--color-dark-lilac) !important;
+  transition: color 0.3s ease-in-out;
+  padding: 8px !important;
+}
+
+.nav-link.active {
+  color: var(--color-highlighted-lilac) !important;
+  font-weight: bold;
+}
+
+/* Navbar item styling */
+.nav-item {
+  font-size: 1.35rem;
+  font-weight: 500;
+  padding: 0px 2px;
+}
+
+/* Hover and focus effects for nav items */
+.nav-item:hover,
+.nav-item:focus {
+  background-color: var(--kawaii-light-pink);
+  color: var(--color-highlighted-lilac);
+  border-radius: 5px;
+}
+
+/* Navbar toggler icon customization */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(252, 122, 191)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Toggler button styling */
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+/* Toggler button hover and focus effects */
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-text {
+  margin-right: 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    justify-content: right;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .ms-auto {
+    margin-left: auto !important;
+  }
+
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
+  }
+
+  .order-md-3 {
+    order: 3;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 991px) {
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0px 5px;
+  }
+
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .ms-auto {
+    margin-left: auto !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
